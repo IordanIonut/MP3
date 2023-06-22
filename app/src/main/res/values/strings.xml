@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">iordanionut_s_application2</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_youtube_link">Youtube Link</string>
+    <string name="lbl_i">i</string>
+    <string name="lbl_70">70%</string>
+    <string name="msg_where_you_want">Where you want to save the mp3</string>
+    <string name="lbl_grabbing_video">Grabbing Video</string>
+    <string name="lbl_success">Success</string>
+    <string name="lbl_17_4m_likes">17.4M Likes</string>
+    <string name="lbl_02_45_04_50">02:45 / 04:50</string>
+    <string name="lbl_download">Download</string>
+    <string name="lbl_downloading">Downloading</string>
+    <string name="lbl_converting">Converting</string>
+    <string name="lbl_saving">Saving</string>
+    <string name="msg_https_www_you">https://www.you ... CScZ3Q</string>
+    <string name="lbl_folder">Folder</string>
+    <string name="msg_please_check_yo">Please check your internet connections</string>
+    <string name="lbl_youtube_mp3">YouTube MP3</string>
+    <string name="lbl_convert_another">Convert Another</string>
+    <string name="lbl_failed">Failed</string>
+    <string name="lbl_1_43b_views">1.43B Views</string>
+    <string name="lbl_2_56mb_4_25mb">2.56MB / 4.25MB</string>
+    <string name="lbl_k_pop_music">K-Pop Music</string>
+    <string name="msg_blackpink_ho">"BLACKPINK - 'How You Like That' DANCE PERFORMANCE VIDEO ..."</string>
+    <string name="msg_mp3_successfull">MP3 successfully saved into selected folder</string>
+</resources>
