@@ -70,7 +70,6 @@ public class DowloadinStageActivity extends AppCompatActivity {
         }
     }
     private void downloadSong(String url, String title) {
-        //download song in Download folder
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
         String formOneValue = getIntent().getStringExtra("formOneValue");
         request.setTitle(title);
@@ -132,7 +131,6 @@ public class DowloadinStageActivity extends AppCompatActivity {
                     } else if (status == DownloadManager.STATUS_FAILED) {
                         handler.removeCallbacks(this);
                         Intent intent = new Intent(DowloadinStageActivity.this, FailedScreenActivity.class);
-                        //send date from FailedScreenActivity
                         intent.putExtra("thumbnailUrl", getIntent().getStringExtra("thumbnailUrl"));
                         intent.putExtra("length", getIntent().getStringExtra("length"));
                         intent.putExtra("title", title);
@@ -149,7 +147,6 @@ public class DowloadinStageActivity extends AppCompatActivity {
                         int totalBytes = cursor.getInt(totalIndex);
 
                         if (totalBytes != 0) {
-                            //send move the progress with a handler with delay 1 miliseconds
                             int progressPercentage = (int) ((downloadedBytes * 100L) / totalBytes);
                             String fileSizeString = getIntent().getStringExtra("size");
                             double fileSize = parseFileSize(fileSizeString);
@@ -167,7 +164,6 @@ public class DowloadinStageActivity extends AppCompatActivity {
         };
         handler.post(runnable);
     }
-    //fom size memory in number
     private double parseFileSize(String fileSizeString) {
         String[] parts = fileSizeString.split(" ");
         if (parts.length < 2) {
@@ -195,7 +191,6 @@ public class DowloadinStageActivity extends AppCompatActivity {
         }
         return fileSize;
     }
-    //from number in size
     private String formatFileSize(double fileSize) {
         String[] units = {"B", "KB", "MB", "GB", "TB", "PB"};
         int unitIndex = 0;

@@ -29,7 +29,6 @@ public class GrabbingStageActivity extends AppCompatActivity {
         retrieveVideoData(videoId);
     }
     private void retrieveVideoData(String videoUrl) {
-        //i did not succeed to use com.github.yausername.youtubedl-android or yt-dlp and i use 2 api from Rapid Api
         OkHttpClient client = new OkHttpClient();
         HttpUrl.Builder urlBuilder = HttpUrl.parse("https://youtube-video-download-info.p.rapidapi.com/dl").newBuilder();
         urlBuilder.addQueryParameter("id", videoUrl);
